@@ -1,0 +1,42 @@
+﻿@page
+@model GestionJDR.Pages.Possessions.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Appartenance</h1>
+
+<p>
+    <a asp-page="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Possede[0].Joueur)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Possede[0].Personnage)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.Possede) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Joueur.FamilyName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Personnage.CharacterName)
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.PossedeID">Edit</a> |
+                <a asp-page="./Details" asp-route-id="@item.PossedeID">Details</a> |
+                <a asp-page="./Delete" asp-route-id="@item.PossedeID">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

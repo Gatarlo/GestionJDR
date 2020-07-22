@@ -1,0 +1,43 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Accueil";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Bienvenue</h1>
+
+    <h2>Bonjour Plébéien !</h2>
+    <p></p>
+
+    <p>Nous sommes actuellement le @Model.Time, et c'est un bon jour pour payer tes impôts !</p>
+</div>
+
+<div class="row mb-auto">
+    <div class="col-md-4">
+        <div class="row no-gutters border mb-4">
+            <div class="col p-4 mb-4 ">
+                <p class="card-text">
+                    Cette application vous permet de gérer les joueurs et les personnages d'une partie de jdr en temps réel.'
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="row no-gutters border mb-4">
+            <div class="col p-4 d-flex flex-column position-static">
+                <p class="card-text mb-auto">
+                    C'est une application de centralisations qui évique le duplicatat de données et les erreurs humaines dûes à des différences de compréhension.'
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="row no-gutters border mb-4">
+            <div class="col p-4 d-flex flex-column">
+                <p class="card-text mb-auto">
+                    Le site est un prototype et l'apparence et les fonctionnalités sont susceptible de changer et dévoluer au fil du temps.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>

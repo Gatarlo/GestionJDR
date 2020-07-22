@@ -1,0 +1,49 @@
+﻿@page
+@model GestionJDR.Pages.Joueurs.DetailsModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Joueur</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Joueur.PlayerName)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Joueur.PlayerName)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Joueur.FamilyName)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Joueur.FamilyName)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Joueur.Age)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Joueur.Age)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Joueur.City)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Joueur.City)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Joueur.Jdr)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Joueur.Jdr)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-page="./Edit" asp-route-id="@Model.Joueur.ID">Edit</a> |
+    <a asp-page="./Index">Back to List</a>
+</div>

@@ -1,0 +1,382 @@
+﻿@page
+@model GestionJDR.Pages.Personnages.IndexModel
+
+@{
+    ViewData["Title"] = "Personnages";
+}
+
+<h1>Personnages</h1>
+
+<p>
+    <a asp-page="Create">Ajouter un nouveau personnage</a>
+</p>
+
+<form>
+    <p>
+        <select asp-for="NomPersonnage" asp-items="Model.Noms">
+            <option value="">Liste Personnages</option>
+        </select>
+        Nom : <input type="text" asp-for="SearchString" />
+        <input type="submit" value="Filter" />
+    </p>
+</form>
+
+<table class="table">
+    @foreach (var item in Model.Personnage)
+    {
+
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Personnage[0].PlayerName)
+                </th>
+                <th>
+                    Action
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.PlayerName)
+                </td>
+                <td>
+                    <a asp-page="./Edit" asp-route-id="@item.PersonnageID">Edit</a> |
+                    <a asp-page="./Details" asp-route-id="@item.PersonnageID">Details</a> |
+                    <a asp-page="./Delete" asp-route-id="@item.PersonnageID">Delete</a>
+                </td>
+            </tr>
+        </tbody>
+
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Personnage[0].CharacterName)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Personnage[0].Profession)
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CharacterName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Profession)
+                </td>
+            </tr>
+        </tbody>
+
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Personnage[0].Vitality)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Personnage[0].Madness)
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Vitality)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Madness)
+                </td>
+            </tr>
+        </tbody>
+
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Personnage[0].Combat)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Personnage[0].Magic)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Personnage[0].Analysis)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Personnage[0].Survival)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Personnage[0].Emergency)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Personnage[0].Craft)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Personnage[0].Resourcefulness)
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Combat)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Magic)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Analysis)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Survival)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Emergency)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Craft)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Resourcefulness)
+                </td>
+            </tr>
+        </tbody>
+
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Personnage[0].Strenght)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Personnage[0].Endurance)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Personnage[0].Dexterity)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Personnage[0].Speed)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Personnage[0].Perception)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Personnage[0].Intelligence)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Personnage[0].Will)
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Strenght)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Endurance)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Dexterity)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Speed)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Perception)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Intelligence)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Will)
+                </td>
+            </tr>
+        </tbody>
+
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Personnage[0].PhysicalProtection)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Personnage[0].MagicalProtection)
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.PhysicalProtection)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.MagicalProtection)
+                </td>
+            </tr>
+        </tbody>
+
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Personnage[0].CompetenceName)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Personnage[0].CompetenceEffect)
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CompetenceName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CompetenceEffect)
+                </td>
+            </tr>
+        </tbody>
+
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Personnage[0].WeaponName)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Personnage[0].WeaponEffect)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Personnage[0].WeaponDescription)
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.WeaponName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.WeaponEffect)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.WeaponDescription)
+                </td>
+            </tr>
+        </tbody>
+
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Personnage[0].ArmorName)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Personnage[0].ArmorEffect)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Personnage[0].ArmorDescription)
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ArmorName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ArmorEffect)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ArmorDescription)
+                </td>
+            </tr>
+        </tbody>
+
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Personnage[0].ObjectName)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Personnage[0].ObjectEffect)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Personnage[0].ObjectDescription)
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ObjectName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ObjectEffect)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ObjectDescription)
+                </td>
+            </tr>
+        </tbody>
+
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Personnage[0].GemName)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Personnage[0].GemElement)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Personnage[0].GemCarats)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Personnage[0].GemAspect)
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.GemName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.GemElement)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.GemCarats)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.GemAspect)
+                </td>
+            </tr>
+        </tbody>
+
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Personnage[0].Note)
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Note)
+                </td>
+            </tr>
+        </tbody>
+
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Personnage[0].Lore)
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Lore)
+                </td>
+            </tr>
+        </tbody>
+    }
+</table>

@@ -1,0 +1,52 @@
+﻿@page
+@model GestionJDR.Pages.Joueurs.DeleteModel
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h1>Delete</h1>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Joueur</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Joueur.PlayerName)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Joueur.PlayerName)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Joueur.FamilyName)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Joueur.FamilyName)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Joueur.Age)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Joueur.Age)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Joueur.City)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Joueur.City)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Joueur.Jdr)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Joueur.Jdr)
+        </dd>
+    </dl>
+    
+    <form method="post">
+        <input type="hidden" asp-for="Joueur.ID" />
+        <input type="submit" value="Delete" class="btn btn-danger" /> |
+        <a asp-page="./Index">Back to List</a>
+    </form>
+</div>

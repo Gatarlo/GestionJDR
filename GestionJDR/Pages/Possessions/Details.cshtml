@@ -1,0 +1,31 @@
+﻿@page
+@model GestionJDR.Pages.Possessions.DetailsModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Possede</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Possede.Joueur)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Possede.Joueur.FamilyName)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Possede.Personnage)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Possede.Personnage.CharacterName)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-page="./Edit" asp-route-id="@Model.Possede.PossedeID">Edit</a> |
+    <a asp-page="./Index">Back to List</a>
+</div>

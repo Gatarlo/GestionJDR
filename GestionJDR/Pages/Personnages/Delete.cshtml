@@ -1,0 +1,250 @@
+﻿@page
+@model GestionJDR.Pages.Personnages.DeleteModel
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h1>Delete</h1>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Personnage</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Personnage.PlayerName)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Personnage.PlayerName)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Personnage.CharacterName)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Personnage.CharacterName)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Personnage.Profession)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Personnage.Profession)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Personnage.Vitality)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Personnage.Vitality)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Personnage.Madness)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Personnage.Madness)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Personnage.Combat)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Personnage.Combat)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Personnage.Magic)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Personnage.Magic)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Personnage.Analysis)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Personnage.Analysis)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Personnage.Survival)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Personnage.Survival)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Personnage.Emergency)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Personnage.Emergency)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Personnage.Craft)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Personnage.Craft)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Personnage.Resourcefulness)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Personnage.Resourcefulness)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Personnage.Strenght)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Personnage.Strenght)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Personnage.Endurance)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Personnage.Endurance)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Personnage.Dexterity)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Personnage.Dexterity)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Personnage.Speed)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Personnage.Speed)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Personnage.Perception)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Personnage.Perception)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Personnage.Intelligence)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Personnage.Intelligence)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Personnage.Will)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Personnage.Will)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Personnage.PhysicalProtection)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Personnage.PhysicalProtection)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Personnage.MagicalProtection)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Personnage.MagicalProtection)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Personnage.CompetenceName)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Personnage.CompetenceName)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Personnage.CompetenceEffect)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Personnage.CompetenceEffect)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Personnage.WeaponName)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Personnage.WeaponName)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Personnage.WeaponEffect)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Personnage.WeaponEffect)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Personnage.WeaponDescription)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Personnage.WeaponDescription)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Personnage.ArmorName)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Personnage.ArmorName)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Personnage.ArmorEffect)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Personnage.ArmorEffect)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Personnage.ArmorDescription)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Personnage.ArmorDescription)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Personnage.ObjectName)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Personnage.ObjectName)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Personnage.ObjectEffect)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Personnage.ObjectEffect)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Personnage.ObjectDescription)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Personnage.ObjectDescription)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Personnage.GemName)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Personnage.GemName)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Personnage.GemElement)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Personnage.GemElement)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Personnage.GemCarats)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Personnage.GemCarats)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Personnage.GemAspect)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Personnage.GemAspect)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Personnage.Note)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Personnage.Note)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Personnage.Lore)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Personnage.Lore)
+        </dd>
+    </dl>
+    
+    <form method="post">
+        <input type="hidden" asp-for="Personnage.PersonnageID" />
+        <input type="submit" value="Delete" class="btn btn-danger" /> |
+        <a asp-page="./Index">Back to List</a>
+    </form>
+</div>

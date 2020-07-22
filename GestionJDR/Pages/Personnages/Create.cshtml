@@ -1,0 +1,224 @@
+﻿@page
+@model GestionJDR.Pages.Personnages.CreateModel
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>Personnage</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Personnage.PersonnageID" class="control-label"></label>
+                <input asp-for="Personnage.PersonnageID" class="form-control" />
+                <span asp-validation-for="Personnage.PersonnageID" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Personnage.PlayerName" class="control-label"></label>
+                <input asp-for="Personnage.PlayerName" class="form-control" />
+                <span asp-validation-for="Personnage.PlayerName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Personnage.CharacterName" class="control-label"></label>
+                <input asp-for="Personnage.CharacterName" class="form-control" />
+                <span asp-validation-for="Personnage.CharacterName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Personnage.Profession" class="control-label"></label>
+                <input asp-for="Personnage.Profession" class="form-control" />
+                <span asp-validation-for="Personnage.Profession" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Personnage.Vitality" class="control-label"></label>
+                <input asp-for="Personnage.Vitality" class="form-control" />
+                <span asp-validation-for="Personnage.Vitality" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Personnage.Madness" class="control-label"></label>
+                <input asp-for="Personnage.Madness" class="form-control" />
+                <span asp-validation-for="Personnage.Madness" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Personnage.Combat" class="control-label"></label>
+                <input asp-for="Personnage.Combat" class="form-control" />
+                <span asp-validation-for="Personnage.Combat" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Personnage.Magic" class="control-label"></label>
+                <input asp-for="Personnage.Magic" class="form-control" />
+                <span asp-validation-for="Personnage.Magic" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Personnage.Analysis" class="control-label"></label>
+                <input asp-for="Personnage.Analysis" class="form-control" />
+                <span asp-validation-for="Personnage.Analysis" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Personnage.Survival" class="control-label"></label>
+                <input asp-for="Personnage.Survival" class="form-control" />
+                <span asp-validation-for="Personnage.Survival" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Personnage.Emergency" class="control-label"></label>
+                <input asp-for="Personnage.Emergency" class="form-control" />
+                <span asp-validation-for="Personnage.Emergency" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Personnage.Craft" class="control-label"></label>
+                <input asp-for="Personnage.Craft" class="form-control" />
+                <span asp-validation-for="Personnage.Craft" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Personnage.Resourcefulness" class="control-label"></label>
+                <input asp-for="Personnage.Resourcefulness" class="form-control" />
+                <span asp-validation-for="Personnage.Resourcefulness" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Personnage.Strenght" class="control-label"></label>
+                <input asp-for="Personnage.Strenght" class="form-control" />
+                <span asp-validation-for="Personnage.Strenght" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Personnage.Endurance" class="control-label"></label>
+                <input asp-for="Personnage.Endurance" class="form-control" />
+                <span asp-validation-for="Personnage.Endurance" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Personnage.Dexterity" class="control-label"></label>
+                <input asp-for="Personnage.Dexterity" class="form-control" />
+                <span asp-validation-for="Personnage.Dexterity" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Personnage.Speed" class="control-label"></label>
+                <input asp-for="Personnage.Speed" class="form-control" />
+                <span asp-validation-for="Personnage.Speed" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Personnage.Perception" class="control-label"></label>
+                <input asp-for="Personnage.Perception" class="form-control" />
+                <span asp-validation-for="Personnage.Perception" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Personnage.Intelligence" class="control-label"></label>
+                <input asp-for="Personnage.Intelligence" class="form-control" />
+                <span asp-validation-for="Personnage.Intelligence" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Personnage.Will" class="control-label"></label>
+                <input asp-for="Personnage.Will" class="form-control" />
+                <span asp-validation-for="Personnage.Will" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Personnage.PhysicalProtection" class="control-label"></label>
+                <input asp-for="Personnage.PhysicalProtection" class="form-control" />
+                <span asp-validation-for="Personnage.PhysicalProtection" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Personnage.MagicalProtection" class="control-label"></label>
+                <input asp-for="Personnage.MagicalProtection" class="form-control" />
+                <span asp-validation-for="Personnage.MagicalProtection" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Personnage.CompetenceName" class="control-label"></label>
+                <input asp-for="Personnage.CompetenceName" class="form-control" />
+                <span asp-validation-for="Personnage.CompetenceName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Personnage.CompetenceEffect" class="control-label"></label>
+                <input asp-for="Personnage.CompetenceEffect" class="form-control" />
+                <span asp-validation-for="Personnage.CompetenceEffect" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Personnage.WeaponName" class="control-label"></label>
+                <input asp-for="Personnage.WeaponName" class="form-control" />
+                <span asp-validation-for="Personnage.WeaponName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Personnage.WeaponEffect" class="control-label"></label>
+                <input asp-for="Personnage.WeaponEffect" class="form-control" />
+                <span asp-validation-for="Personnage.WeaponEffect" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Personnage.WeaponDescription" class="control-label"></label>
+                <input asp-for="Personnage.WeaponDescription" class="form-control" />
+                <span asp-validation-for="Personnage.WeaponDescription" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Personnage.ArmorName" class="control-label"></label>
+                <input asp-for="Personnage.ArmorName" class="form-control" />
+                <span asp-validation-for="Personnage.ArmorName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Personnage.ArmorEffect" class="control-label"></label>
+                <input asp-for="Personnage.ArmorEffect" class="form-control" />
+                <span asp-validation-for="Personnage.ArmorEffect" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Personnage.ArmorDescription" class="control-label"></label>
+                <input asp-for="Personnage.ArmorDescription" class="form-control" />
+                <span asp-validation-for="Personnage.ArmorDescription" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Personnage.ObjectName" class="control-label"></label>
+                <input asp-for="Personnage.ObjectName" class="form-control" />
+                <span asp-validation-for="Personnage.ObjectName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Personnage.ObjectEffect" class="control-label"></label>
+                <input asp-for="Personnage.ObjectEffect" class="form-control" />
+                <span asp-validation-for="Personnage.ObjectEffect" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Personnage.ObjectDescription" class="control-label"></label>
+                <input asp-for="Personnage.ObjectDescription" class="form-control" />
+                <span asp-validation-for="Personnage.ObjectDescription" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Personnage.GemName" class="control-label"></label>
+                <input asp-for="Personnage.GemName" class="form-control" />
+                <span asp-validation-for="Personnage.GemName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Personnage.GemElement" class="control-label"></label>
+                <input asp-for="Personnage.GemElement" class="form-control" />
+                <span asp-validation-for="Personnage.GemElement" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Personnage.GemCarats" class="control-label"></label>
+                <input asp-for="Personnage.GemCarats" class="form-control" />
+                <span asp-validation-for="Personnage.GemCarats" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Personnage.GemAspect" class="control-label"></label>
+                <input asp-for="Personnage.GemAspect" class="form-control" />
+                <span asp-validation-for="Personnage.GemAspect" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Personnage.Note" class="control-label"></label>
+                <input asp-for="Personnage.Note" class="form-control" />
+                <span asp-validation-for="Personnage.Note" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Personnage.Lore" class="control-label"></label>
+                <input asp-for="Personnage.Lore" class="form-control" />
+                <span asp-validation-for="Personnage.Lore" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
